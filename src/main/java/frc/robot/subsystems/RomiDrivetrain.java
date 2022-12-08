@@ -54,6 +54,7 @@ public class RomiDrivetrain extends SubsystemBase {
     return m_rightEncoder.getDistance();
   }
 
+  //Add the distance from both encoders and divide them by two to get the average distance.
 public double getAverageDistanceInch(){
 return (m_rightEncoder.getDistance() + m_leftEncoder.getDistance()) /2 ;
 
