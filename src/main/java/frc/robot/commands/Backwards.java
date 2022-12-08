@@ -48,6 +48,6 @@ public class Backward extends CommandBase {
   // Returns true when the command should end.
   @Override
   public boolean isFinished() {
-    return m_db.getRightDistanceInch() > distance;
+    return m_db.getAverageDistanceInch() > distance;
   }
 }
