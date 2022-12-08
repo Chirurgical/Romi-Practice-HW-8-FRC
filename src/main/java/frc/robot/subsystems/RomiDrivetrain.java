@@ -55,9 +55,7 @@ public class RomiDrivetrain extends SubsystemBase {
   }
 
 public double getAverageDistanceInch(){
-return m_rightEncoder.getDistance();
-return m_leftEncoder.getDistance();
-
+return (m_rightEncoder.getDistance() + m_leftEncoder.getDistance()) /2 ;
 
 }
   @Override
